@@ -2,7 +2,7 @@
 
 * Студент: [Владислав Пеньзяков](https://up.htmlacademy.ru/htmlcss-individual/2/user/2563141).
 * Наставник: [Артём Картавый](https://htmlacademy.ru/profile/artem_k).
-* Сайт: [Мой проект Седона](https://github.com/VladKolar/2563141-sedona-2)
+* Сайт: [Мой проект Седона](https://vladkolar.github.io/2563141-sedona-2/)
 
 ---
 
