@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Владислав Пеньзяков](https://up.htmlacademy.ru/htmlcss-individual/2/user/2563141).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Картавый](https://htmlacademy.ru/profile/artem_k).
+* Сайт: [Мой проект Седона]((https://github.com/VladKolar/2563141-sedona-2)
 
 ---
 
