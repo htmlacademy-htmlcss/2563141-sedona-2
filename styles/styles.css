@@ -16,21 +16,38 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
   color: #333333;
   background-color: #F2F2F2;
 }
 
+.navigation-link {
+  line-height: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-user-link {
+  line-height: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
 .button {
   font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 36px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
   background-color: #82B3D3;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -76,35 +93,11 @@ body {
   text-decoration: none;
 }
 
-.navigation-link {
-  font-family: "PT Sans", sans-serif;
-  line-height: 24px;
-  font-weight: 700;
-  text-align: center;
-  color: #000000;
-  background-color: #FFFFFF;
-  text-decoration: none;
-  text-transform: none;
-}
-
-.navigation-user-link {
-  font-family: "PT Sans", sans-serif;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  color: #000000;
-  background-color: #FFFFFF;
-  text-decoration: none;
-  text-transform: none;
-}
-
-.main-background {
-  color:#000000;
-  background-color:#6F853A;
-  background-image: url("../images/index-background.jpg");
-  background-size: 100% auto;
+.hero {
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
+  background-size: 100% auto, cover;
   background-repeat: no-repeat;
-  text-align: center;
+  background-position: left bottom, left top;
 }
 
 .sedona-description {
@@ -151,6 +144,52 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-description {
+  background-color:#FFFFFF;
+}
+
+.reasons-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color:#ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.reasons-text {
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.reasons-dark {
+  background-color: #83B3D333;
+}
+
+.advantages-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color:#000000;
+  background-color:#FFFFFF;
+  text-transform: uppercase;
+}
+
+.reasons-subtitle-inner {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.reasons-light {
+  background-color: #83B3D31F;
+}
+
 .page-footer {
   font-size: 40px;
   font-weight: 400;
@@ -188,12 +227,11 @@ body {
   text-transform: none;
 }
 
-.index-subscribe-form-section {
-  color:#000000;
-  background-color:#FFFFFF;
+.subscribe {
   background-image: url("../images/main-subscribe.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-color:#756157
 }
 
 .inner-header {
@@ -207,7 +245,7 @@ body {
   text-transform: none;
   background-image: url("../images/catalog-upper.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .inner-header h1 {
@@ -237,6 +275,21 @@ body {
   background-color: #ffffff;
 }
 
+.button-clear {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+}
+
 .hotel-card {
   background-color: #ffffff;
 }
@@ -260,15 +313,16 @@ body {
 
 .product-card-button {
   background-color: #756157;
+  text-decoration: none;
+}
+
+.product-card-price {
+  text-align: right;
 }
 
 .hotel-rating {
   color: #333333;
   background-color: #F2F2F2;
-}
-
-.pagination {
-  background-color: #FFFFFF;
 }
 
 .pagination-link {
@@ -282,4 +336,20 @@ body {
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
+}
+
+.newsletter-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 700;
+  color:#000000;
+  text-transform: uppercase;
+}
+
+.newsletter-text {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
 }
