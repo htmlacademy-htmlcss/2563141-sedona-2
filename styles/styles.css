@@ -40,6 +40,11 @@ body {
   text-decoration: none;
 }
 
+.navigation-logo {
+  width: 140px;
+  margin-right: 40px;
+}
+
 .button {
   font-family: inherit;
   font-size: 20px;
@@ -72,6 +77,33 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 440px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .page-header {
@@ -131,6 +163,32 @@ body {
 
 .reasons-list {
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.reasons-wrapper {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.reasons-item {
+  width: 400px;
+}
+
+.advantages-wrapper {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.advantages-item {
+  width: 400px;
 }
 
 .reasons-item-title {
@@ -202,6 +260,21 @@ body {
   background-color:#FFFFFF;
 }
 
+.footer-social-list {
+  width: 170px;
+  margin-right: 42px;
+}
+
+.footer-contacts {
+  margin-left: auto;
+  max-width: 720px;
+}
+
+.footer-logo {
+  margin-left: auto;
+  max-width: 115px;
+}
+
 .footer-contacts-link {
   color:#000000;
   background-color:#FFFFFF;
@@ -231,7 +304,8 @@ body {
   background-image: url("../images/main-subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color:#756157
+  background-color:#756157;
+  color:#FFFFFF;
 }
 
 .inner-header {
@@ -247,6 +321,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-group {
+  width: 370px;
+  margin-right: 140px;
+}
+
+.catalog-right-column {
+  width: 1060px;
+}
+
 
 .inner-header h1 {
   font-family: "PT Sans", sans-serif;
@@ -352,4 +440,10 @@ body {
   line-height: 26px;
   font-weight: 400;
   text-align: center;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
 }

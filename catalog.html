@@ -43,7 +43,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner main-container">
       <section class="inner-header">
       <header class="inner-header">
         <h1 class="inner-header">Гостиницы Седоны</h1>
@@ -129,12 +129,14 @@
           <span class="filtration-result-hotels">38</span>
         </p>
         </section>
+        <div class="catalog-right-column">
         <div class="sorting-container">
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярные</option>
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
+        </div>d
         <ul class="hotels-list-view">
           <li class="hotels-list-view-item">
             <a href="#" class="button button-light">
@@ -240,20 +242,23 @@
       </section>
     </main>
     <footer class="page-footer" data-test="footer">
+      <div class="page-footer-container">
       <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
+            <img class="footer-social-vk" src="images/social-vk.svg" width="24" height="14" alt="Вконтакте">
             <a class="footer-social-link footer-social-link-twitter" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="footer-social-item">
+            <img class="footer-social-tg" src="images/social-telegram.svg" width="18" height="16" alt="Телеграм">
             <a class="footer-social-link footer-social-link-facebook" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
+            <img class="footer-social-yt" src="images/social-youtube.svg" width="22" height="17" alt="Ютуб">
             <a class="footer-social-link footer-social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">YouTube</span>
             </a>
@@ -261,15 +266,14 @@
         </ul>
       </section>
       <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
         <a class="footer-contacts-link" href="tel:+78128121212" target="_blank" rel="noopener">+7 (812) 812-12-12</a>
       </section>
       <section class="footer-logo">
-        <h2 class="visually-hidden">.html Academy</h2>
         <img class="footer-social-vk" src="images/logo-academy.svg" width="115" height="33" alt="Логотип HTML-академии">
         <a class="footer-logo-link" href="https://htmlacademy.ru">
         </a>
       </section>
+      </div>
     </footer>
   </body>
 

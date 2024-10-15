@@ -42,7 +42,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container" data-test="main">
+    <main class="main-container main-index" data-test="main">
+      <div class="page-container">
       <section class="hero">
            <h1 class="visually-hidden">Главная страница Седона</h1>
           <img class="logo" src="images/welcome.svg" width="458" height="352"
@@ -53,13 +54,14 @@
         <h2 class="advantages-title">Седона — небольшой городок в Аризоне,<br>заслуживаюший большего!</h2>
         <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="reasons-list">
-          <li class="reasons-item">
+          <li class="reasons-item-big">
             <div class="reasons-town">
               <h3 class="reasons-subtitle">Настоящий городок</h3>
               <p class="reasons-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
               <img src="images/photo-1.jpg" width="800" height="385" alt="Город Седона">
               </div>
           </li>
+          <div class="reasons-wrapper">
           <li class="reasons-item reasons-light">
             <h3 class="reasons-subtitle reasons-subtitle-inner">Небольшая площадь</h3>
             <p class="reasons-text-inner">Все достопримечательности находятся очень близко</p>
@@ -72,7 +74,8 @@
             <h3 class="reasons-subtitle reasons-subtitle-inner">Мало туристов</h3>
             <p class="reasons-item-grand">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="reasons-item">
+          </div>
+          <li class="reasons-item-big">
             <div class="reasons-town">
               <h3 class="reasons-subtitle">Там есть мост дьявола</h3>
               <p class="reasons-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -85,7 +88,7 @@
       <section class="advantages-section">
         <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p>Опытный персонал и качественное обслуживание!</p>
-        <ul>
+        <ul class="advantages-wrapper">
           <li class="advantages-item">
             <img class="advanantages-item-house" src="images/advantage-house.svg" width="75" height="72" alt="Дом">
             <h3>Жилье</h3>
@@ -118,8 +121,10 @@
           <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
+      </div>
     </main>
     <footer class="page-footer" data-test="footer">
+      <div class="page-footer-container">
       <section class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -150,6 +155,7 @@
         <a class="footer-logo-link" href="https://htmlacademy.ru">
         </a>
       </section>
+      </div>
     </footer>
   </body>
 
