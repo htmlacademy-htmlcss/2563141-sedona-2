@@ -9,11 +9,14 @@
   </head>
 
   <body>
+    <div class="page-container">
     <header class="page-header" data-test="header">
+      <nav class="navigation-header">
+      <div class="navigation-logo">
       <a class="navigation-link" href="index.html" aria-current="page">
-        <img class="navigation-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип Sedona">
+        <img class="logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип Sedona">
       </a>
-      <nav class="navigation">
+      </div>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-active-link" href="index.html" aria-current="page">Главная</a>
@@ -25,19 +28,20 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-user">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#" data-test="search">
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-user-link navigation-user-link-found" href="#" data-test="search">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-user-item">
+          <li class="navigation-item">
             <span class="visually-hidden">
-              <a class="navigation-link" href="#">Избранное</a>
+              <a class="navigation-user-link navigation-user-link-liked" href="#">Избранное</a>
             </span>
+            <span class="amount">12</span>
           </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-come" href="#">Хочу сюда</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -50,11 +54,13 @@
             alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
       </section>
       <section class="advantages" data-test="advantages">
+        <div class="advantages-text">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <h2 class="advantages-title">Седона — небольшой городок в Аризоне,<br>заслуживаюший большего!</h2>
         <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
         <ul class="reasons-list">
-          <li class="reasons-item-big">
+          <li class="reasons-item reasons-item-big">
             <div class="reasons-town">
               <h3 class="reasons-subtitle">Настоящий городок</h3>
               <p class="reasons-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
@@ -75,7 +81,7 @@
             <p class="reasons-item-grand">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           </div>
-          <li class="reasons-item-big">
+          <li class="reasons-item reasons-item-big">
             <div class="reasons-town">
               <h3 class="reasons-subtitle">Там есть мост дьявола</h3>
               <p class="reasons-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -86,27 +92,26 @@
         </ul>
       </section>
       <section class="advantages-section">
+        <h2 class="visually-hidden">Услуги</h2>
         <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p>Опытный персонал и качественное обслуживание!</p>
         <ul class="advantages-wrapper">
-          <li class="advantages-item">
-            <img class="advanantages-item-house" src="images/advantage-house.svg" width="75" height="72" alt="Дом">
-            <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <li class="advantages-item advantages-item-bright">
+            <h3 class="advantages-object">Жилье</h3>
+            <p class="advantages-recomend">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="advantages-item">
-            <img class="advanantages-item-burger" src="images/advantage-burger.svg" width="74" height="70" alt="Бургер">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <h3 class="advantages-object">Еда</h3>
+            <p class="advantages-recomend">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantages-item">
-            <img class="advanantages-item-price" src="images/advantage-price.svg" width="64" height="76" alt="Подарок">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и настоящего местного производства!</p>
+            <h3 class="advantages-object">Сувениры</h3>
+            <p class="advantages-recomend">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
       <section class="interest" data-test="subscribe">
+        <h2 class="visually-hidden">Бронирование</h2>
         <h2 class="interest-title title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-form-button" href="catalog.html">Поиск гостиницы в Седоне</a>
@@ -157,6 +162,7 @@
       </section>
       </div>
     </footer>
+    </div>
   </body>
 
 </html>
