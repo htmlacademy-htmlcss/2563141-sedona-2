@@ -8,48 +8,52 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип Седоны" src="images/logo-sedona.svg" width="140" height="70">
-        </a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
+    <div class="page-container">
+      <header class="page-header" data-test="header">
+        <nav class="navigation-header">
+          <div class="navigation-logo">
+            <a class="navigation-link" href="index.html" aria-current="page">
+              <img class="logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип Sedona">
             </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-pushbutton pushbutton" href="#">
-              <span class="visually-hidden">Хочу сюда</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+          </div>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-active-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-user-link navigation-user-link-found" href="#" data-test="search">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <span class="visually-hidden">
+                <a class="navigation-user-link navigation-user-link-liked" href="#">Избранное</a>
+              </span>
+              <span class="amount">12</span>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-pushbutton pushbutton" href="#">Хочу сюда</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     <main class="main-inner main-container">
       <section class="inner-header">
       <header class="inner-header">
         <h1 class="inner-header">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="index.html">Главная</a>
+                  <a class="breadcrumbs-link breadcrumbs-link-main" href="index.html">
+                    <span class="visually-hidden">Главная</span>
+                  </a>
                 </li>
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link">Гостиницы</a>
@@ -231,15 +235,17 @@
             <a class="pagination-link link" href="#">10</a>
           </li>
         </ul>
-      <section class="newsletter" data-test="subscribe">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/">
-          <label class="visually-hidden" for="newsletter-mail">Mail</label>
-          <input name="newsletter-mail" id="newsletter-mail" type="text" placeholder="Ваш e-mail" required>
-          <button class="newsletter-button" type="submit">Подписаться</button>
-        </form>
-      </section>
+        <section class="subscribe subscribe-light" data-test="subscribe">
+          <span class="visually-hidden">Подписаться на рассылку</span>
+          <h2 class="title">Подпишитесь на рассылку</h2>
+          <p class="subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="subscribe-email">E-mail</label>
+            <input class="subscribe-form-email" type="email" placeholder="Ваш e-mail" id="subscribe-email"
+              name="subscribe-email" required>
+            <button class="pushbutton pushbutton-blue subscribe-pushbutton" type="submit">Подписаться</button>
+          </form>
+        </section>
     </main>
     <footer class="page-footer" data-test="footer">
       <div class="page-footer-container">
@@ -275,6 +281,7 @@
       </section>
       </div>
     </footer>
+    </div>
   </body>
 
 </html>

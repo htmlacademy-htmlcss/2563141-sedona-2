@@ -474,6 +474,10 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.reasons-text .reasons-item-wrapper {
+  color:#333333;
+}
+
 .advantages .advantages-title {
   margin-bottom: 25px;
   padding: 0 286px;
@@ -481,6 +485,10 @@ img {
 
 .advantages-text {
   padding: 69px 0 90px;
+}
+
+.advantages-text .title {
+  color:#000000;
 }
 
 .reasons-text .advantages-recomend {
@@ -606,8 +614,8 @@ img {
 
 .subscribe-form {
   display: flex;
-  width: 100%;
   margin: 0 auto;
+  width: 100%;
 }
 
 .subscribe-form-email {
@@ -624,6 +632,20 @@ img {
   padding: 11px 17px;
   box-sizing: border-box;
   font-family: inherit;
+}
+
+.subscribe-light {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.subscribe-light .subtitle {
+  color: #333333;
+}
+
+.subscribe-light .title {
+  color: #000000;
 }
 
 .pushbutton-blue {
@@ -650,6 +672,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .catalog-filter {
   display: flex;
