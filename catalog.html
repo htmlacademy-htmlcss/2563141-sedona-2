@@ -60,8 +60,8 @@
                 </li>
               </ul>
             </header>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group" data-test="filter">
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
@@ -108,8 +108,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="choise-rental-price">
-            <legend class="rental-price">Стоимость, ₽</legend>
+          <fieldset class="catalog-filter-group choise-rental-price">
+            <legend class="catalog-filter-title">Стоимость, ₽</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -123,12 +123,14 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button-catalog" type="submit">Применить</button>
+          <div class="select-buttons">
+          <button class="pushbutton pushbutton-blue" type="submit">Применить</button>
           <button class="button-clear" type="reset">Сбросить</button>
+          </div>
         </form>
       </section>
       <section class="filtration-result">
-        <p class="filtration-result-title">
+        <p class="title">
           Найдено гостиниц:
           <span class="filtration-result-hotels">38</span>
         </p>
@@ -140,7 +142,7 @@
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        </div>d
+        </div>
         <ul class="hotels-list-view">
           <li class="hotels-list-view-item">
             <a href="#" class="button button-light">
@@ -169,8 +171,8 @@
             </a>
             <p class="card-text">Гостиница</p>
             <p class="product-card-price">От 4000 р</p>
-            <a class="product-card-button button" href="#">Подробнее</a>
-            <button class="button">В избранное</button>
+            <a class="pushbutton" href="#">Подробнее</a>
+            <button class="pushbutton pushbutton-blue">В избранное</button>
             <span class="rating-stars visually-hidden">звезды рейтинга</span>
             <p class="hotel-rating">Рейтинг <span class="hotel-rating-value">8.5</span></p>
           </li>
@@ -182,8 +184,8 @@
             </a>
             <span class="card-text">Гостиница</span>
             <span class="product-card-price">от 5000 ₽</span>
-            <a class="product-card-button button" href="#">Подробнее</a>
-            <button class="button favorites">В избранном</button>
+            <a class="pushbutton" href="#">Подробнее</a>
+            <button class="pushbutton pushbutton-favorites">В избранном</button>
             <span class="rating-stars visually-hidden">звезды рейтинга</span>
             <p class="hotel-rating">Рейтинг <span class="hotel-rating-value">8.5</span></p>
           </li>
@@ -195,8 +197,8 @@
             </a>
             <span class="card-text">Гостиница</span>
             <span class="product-card-price">от 2500 ₽</span>
-            <a class="product-card-button button" href="#">Подробнее</a>
-            <button class="button">В избранное</button>
+            <a class="pushbutton" href="#">Подробнее</a>
+            <button class="pushbutton pushbutton-blue">В избранное</button>
             <span class="rating-stars visually-hidden">звезды рейтинга</span>
             <p class="hotel-rating">Рейтинг <span class="hotel-rating-value">8.5</span></p>
           </li>
@@ -209,8 +211,8 @@
             </a>
             <span class="card-text">Гостиница</span>
             <span class="product-card-price">от 1500 ₽</span>
-            <a class="product-card-button button" href="#">Подробнее</a>
-            <button class="button">В избранное</button>
+            <a class="pushbutton" href="#">Подробнее</a>
+            <button class="pushbutton pushbutton-blue">В избранное</button>
             <span class="rating-stars visually-hidden">звезды рейтинга</span>
             <p class="hotel-rating">Рейтинг <span class="hotel-rating-value">8.5</span></p>
           </li>
