@@ -4,22 +4,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon.png">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
     <meta name="keywords" content="Седона, HTML Academy, Гостиницы">
   </head>
 
   <body>
+
     <div class="page-container">
-      <header class="page-header" data-test="header">
+      <header class="page-header" data-text="header">
         <nav class="navigation-header">
           <div class="navigation-logo">
-            <a class="navigation-link" href="index.html" aria-current="page">
-              <img class="logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип Sedona">
+            <a class="logo-link" href="index.html">
+              <img class="logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип Седоны.">
             </a>
           </div>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-active-link" href="index.html" aria-current="page">Главная</a>
+              <a class="navigation-link navigation-link-active">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -30,26 +33,26 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-user-link navigation-user-link-found" href="#" data-test="search">
+              <a class="navigation-link navigation-link-found" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <span class="visually-hidden">
-                <a class="navigation-user-link navigation-user-link-liked" href="#">Избранное</a>
-              </span>
-              <span class="amount">12</span>
+              <a class="navigation-link navigation-link-liked" href="#">
+                <span class="visually-hidden">Избранное</span>
+                <span class="amount">12</span>
+              </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-pushbutton pushbutton" href="#">Хочу сюда</a>
+              <a class="pushbutton" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <main class="main-container main-index" data-test="main">
-        <section class="hero">
-          <h1 class="visually-hidden">Главная страница Седона</h1>
+      <main class="main-container" data-test="main">
+        <section class="hero" data-test="hero">
+          <h1 class="visually-hidden">Седона</h1>
           <img class="logo" src="images/welcome.svg" width="458" height="352"
             alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
         </section>
@@ -57,63 +60,63 @@
         <section class="advantages" data-test="advantages">
           <div class="advantages-text">
             <span class="visually-hidden">Наши преимущества</span>
-            <h2 class="title">Седона — небольшой городок в Аризоне,<br>заслуживаюший большего!</h2>
+            <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
           <ul class="reasons-list">
             <li class="reasons-item reasons-item-big">
               <div class="reasons-town">
-                <h3 class="reasons-subtitle">Настоящий городок</h3>
-                <p class="reasons-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-                <img src="images/photo-1.jpg" width="800" height="385" alt="Город Седона">
+                <h3 class="reasons-title">Настоящий городок</h3>
+                <p class="reasons-subtitle">Седона — не аттракцион для туристов, там течет своя жизнь</p>
               </div>
+              <img class="reasons-photo" src="images/photo-1.jpg" width="800" height="385" alt="Город Седона">
             </li>
-              <li class="reasons-item reasons-item-wrapper reasons-item-bright">
-                <h3 class="reasons-subtitle">Небольшая площадь</h3>
-                <p class="reasons-text">Все достопримечательности находятся очень близко</p>
-              </li>
-              <li class="reasons-item reasons-item-wrapper reasons-dark">
-                <h3 class="reasons-subtitle">Красивая дорога</h3>
-                <p class="reasons-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </li>
-              <li class="reasons-item reasons-item-wrapper reasons-item-bright">
-                <h3 class="reasons-subtitle">Мало туристов</h3>
-                <p class="reasons-text">Большинство едет в Гранд Каньон и толпится там</p>
-              </li>
+            <li class="reasons-item reasons-item-wrapper reasons-item-bright">
+              <h3 class="reasons-title">Небольшая площадь</h3>
+              <p class="reasons-subtitle">Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="reasons-item reasons-item-wrapper reasons-item-light-blue">
+              <h3 class="reasons-title">Красивая дорога</h3>
+              <p class="reasons-subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="reasons-item reasons-item-wrapper reasons-item-bright">
+              <h3 class="reasons-title">Мало туристов</h3>
+              <p class="reasons-subtitle">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
             <li class="reasons-item reasons-item-big">
-              <div class="reasons-town">
-                <h3 class="reasons-subtitle">Там есть мост дьявола</h3>
-                <p class="reasons-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-                <img class="reasons-item-devils-bridge" src="images/photo-2.jpg" width="800" height="385"
+              <img class="reasons-photo" src="images/photo-2.jpg" width="800" height="385"
                   alt="Мост Дьявола">
+              <div class="reasons-town">
+                <h3 class="reasons-title">Там есть<br> мост Дьявола</h3>
+                <p class="reasons-subtitle">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-            </li>
-          </ul>
-        </section>
-        <section class="advantages-section">
-          <div class="advantages-wrap">
-            <h2 class="visually-hidden">Услуги</h2>
-            <h2 class="title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-            <p class="subtitle">Опытный персонал и качественное обслуживание!</p>
-          </div>
-          <ul class="advantages-list">
-            <li class="advantages-item advantages-item-bright">
-              <h3 class="advantages-title">Жилье</h3>
-              <p class="advantages-recomend">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li class="advantages-item">
-              <h3 class="advantages-title advantages-title-burger">Еда</h3>
-              <p class="advantages-recomend">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="advantages-item advantages-item-bright">
-              <h3 class="advantages-title advantages-title-price">Сувениры</h3>
-              <p class="advantages-recomend">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
 
-        <section class="interest" data-test="subscribe">
-          <h2 class="visually-hidden">Бронирование</h2>
+        <section class="advantages-section" data-test="service">
+          <div class="advantages-wrap">
+            <h2 class="visually-hidden">Услуги</h2>
+            <p class="title">Приезжайте в Седону отдохнуть в&nbsp;комфорте и уюте!</p>
+            <p class="subtitle">Опытный персонал и качественное обслуживание!</p>
+          </div>
+          <ul class="advantages-list">
+            <li class="advantages-item advantages-item-bright">
+              <h3 class="advantages-title">Жильё</h3>
+              <p class="advantages-recomend">Рекомендуем пожить в&nbsp;настоящем мотеле,<br>всё как в кино!</p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="advantages-title advantages-title-burger">Еда</h3>
+              <p class="advantages-recomend">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="advantages-item advantages-item-bright">
+              <h3 class="advantages-title advantages-title-price">Сувениры</h3>
+              <p class="advantages-recomend">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="interest" data-test="search">
           <h2 class="title">Заинтересовались?</h2>
           <p class="subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
@@ -122,7 +125,7 @@
 
         <section class="subscribe" data-test="subscribe">
           <h2 class="title">Подпишитесь на рассылку</h2>
-          <p class="subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subtitle">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">E-mail</label>
             <input class="subscribe-form-email" type="email" placeholder="Ваш e-mail" id="subscribe-email"
@@ -135,23 +138,20 @@
       <footer class="page-footer" data-test="footer">
         <div class="page-footer-container">
           <section class="footer-social">
-            <span class="visually-hidden">Соцсети</span>
+            <h2 class="visually-hidden">Соцсети</h2>
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <img class="footer-social-vk" src="images/social-vk.svg" width="24" height="14" alt="Вконтакте">
-                <a class="footer-social-link footer-social-link-twitter" href="https://vk.com/htmlacademy">
+                <a class="footer-social-link footer-social-link-vk" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Vkontakte</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <img class="footer-social-tg" src="images/social-telegram.svg" width="18" height="16" alt="Телеграм">
-                <a class="footer-social-link footer-social-link-facebook" href="https://t.me/htmlacademy">
+                <a class="footer-social-link footer-social-link-tg" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Telegram</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <img class="footer-social-yt" src="images/social-youtube.svg" width="22" height="17" alt="Ютуб">
-                <a class="footer-social-link footer-social-link-youtube"
+                <a class="footer-social-link footer-social-link-yt"
                   href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">YouTube</span>
                 </a>
@@ -163,14 +163,88 @@
               812-12-12</a>
           </section>
           <section class="footer-logo">
-            <img class="footer-social-vk" src="images/logo-academy.svg" width="115" height="33"
-              alt="Логотип HTML-академии">
+            <h2 class="visually-hidden">Создан в Академии HTML</h2>
             <a class="footer-logo-link" href="https://htmlacademy.ru">
             </a>
           </section>
         </div>
       </footer>
     </div>
-  </body>
 
+
+    <div class="modal-container modal-close" data-test="modal">
+      <div class="modal modal-search">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="modal-wrapper">
+              <label class="modal-label" for="date-start">Дата заезда:</label>
+              <span class="modal-field">
+                <input type="text" name="date-start" id="date-start" value="27 апреля 2020" placeholder="Укажите дату" required>
+                <span class="modal-help modal-help-error">Мы не можем отправить вас в прошлое.</span>
+              </span>
+            </p>
+            <p class="modal-wrapper">
+              <label class="modal-label" for="date-end">Дата выезда:</label>
+              <span class="modal-field">
+                <input type="text" name="date-end" id="date-end" value="1 сентября 2023" placeholder="Укажите дату" required>
+                <span class="modal-help">На эти даты есть свободные номера. Пока есть.</span>
+              </span>
+            </p>
+            <div class="modal-pack">
+              <p class="modal-wrapper">
+                <label class="modal-label" for="modal-adult">Взрослые:</label>
+                <span class="modal-field-calc">
+                  <button class="pushbutton-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    </svg>
+                  </button>
+                  <input type="number" name="modal-adult" id="modal-adult" value="2" placeholder="0" required>
+                  <button class="pushbutton-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                    </svg>
+                  </button>
+                </span>
+              </p>
+              <p class="modal-wrapper">
+                <span class="modal-label">
+                  <label for="modal-child">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <span class="visually-hidden">Подсказка</span>
+                    </button>
+                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <span class="modal-field-calc">
+                  <button class="pushbutton-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" />
+                    </svg>
+                  </button>
+                  <input type="number" name="modal-child" id="modal-child" value="2" placeholder="0">
+                  <button class="pushbutton-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                    </svg>
+                  </button>
+                </span>
+              </p>
+            </div>
+            <button class="pushbutton pushbutton-blue modal-pushbutton" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+
+    </div>
+  </body>
 </html>
