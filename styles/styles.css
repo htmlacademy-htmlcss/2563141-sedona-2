@@ -60,7 +60,6 @@ img {
 
 .main-container {
   flex-grow: 1;
-  padding-top: 4px;
 }
 
 
@@ -175,6 +174,11 @@ img {
   opacity: 0.5;
 }
 
+.hero-image {
+  display: block;
+  margin: 0 auto;
+}
+
 .navigation-link-active {
   position: relative;
 }
@@ -214,11 +218,7 @@ img {
   background-position: center;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 25px;
-}
+
 
 .navigation-user .navigation-item:last-child {
   padding: 14px 0 14px 20px;
@@ -280,6 +280,16 @@ img {
   background-color: #ffffff;
 }
 
+
+.hero,
+.subscribe,
+.filters {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #363636;
+}
+
+
 .hero {
   padding-top: 51px;
   padding-bottom: 82px;
@@ -289,7 +299,9 @@ img {
   background-position:
     center bottom,
     center;
-    background-repeat: no-repeat;
+  background-size:
+    auto,
+    cover;
 }
 
 .search-form-button {
@@ -305,10 +317,7 @@ img {
   margin: 0 auto;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto;
-}
+
 
 .page-header {
   color: #000000;
@@ -413,12 +422,22 @@ img {
   color: inherit;
 }
 
-.reasons-item-light-blue {
-  background-color: rgba(131, 179, 211, 0.2);
+
+
+.reasons-item-wrapper:nth-child(odd) {
+  background-color:rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-bright {
+.reasons-item-wrapper:nth-child(even) {
+  background-color:rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item:nth-child(odd) {
   background-color:rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(even) {
+  background:#FFFFFF;
 }
 
 .reasons-subtitle, .advantages-recomend {
@@ -549,10 +568,6 @@ img {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.reasons-item-light-blue  {
-  background-color: rgba(131, 179, 211, 0.2);
-}
-
 .interest {
   padding: 96px 304px;
 }
@@ -575,7 +590,8 @@ img {
 
 .footer-social {
   display: flex;
-  min-width: 142px;
+  flex-wrap: wrap;
+  min-width: 140px;
 }
 
 .footer-social-list {
@@ -930,6 +946,7 @@ img {
   font-size: 20px;
   margin-bottom: 32px;
   padding: 0;
+  color: #FFFFFF;
 }
 
 .catalog-filter-list {
@@ -973,10 +990,6 @@ img {
   align-items: flex-start;
 }
 
-.control-input-check, .control-input-radio {
-  display: none;
-}
-
 .control-input-radio:checked + .control-name .control {
   background-color: #3f5e72;
   border: 5px solid #ffffff;
@@ -1008,7 +1021,6 @@ img {
 .control-input-radio:focus + .control-name .control {
   box-shadow: 0 0 0 3px #83b3d3;
 }
-
 
 .choise-rental-price {
   width: 100%;
@@ -1310,15 +1322,15 @@ img {
 }
 
 .two-hotel-stars {
-  width: 36px;
+  width: 46px;
 }
 
 .three-hotel-stars {
-  width: 55px;
+  width: 69px;
 }
 
 .four-hotel-stars {
-  width: 73px;
+  width: 92px;
 }
 
 .five-hotel-stars {
@@ -1337,14 +1349,6 @@ img {
   border-radius: 4px;
 }
 
-.catalog-filter-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #FFFFFF;
-  text-transform: none;
-}
-
 .sorting-container {
   color: #000000;
   background-color: #ffffff;
@@ -1357,25 +1361,6 @@ img {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-}
-
-.select-control {
-  font-weight: 400;
-  color: #333333;
-  background-color: #ffffff;
-}
-
-.hotel-card {
-  background-color: #ffffff;
-}
-
-.hotel-card-link {
-  text-decoration: none;
-}
-
-.hotel-card-title {
-  font-weight: 700;
-  color: #000000;
 }
 
 .hotel-card-price {
@@ -1391,22 +1376,6 @@ img {
   text-decoration: none;
 }
 
-.product-card-price {
-  text-align: right;
-}
-
-.hotel-rating {
-  text-align: center;
-  text-transform: uppercase;
-  color: #333333;
-  background-color: #f2f2f2;
-  padding: 8px 18px;
-  font-size: 16px;
-  border-radius: 4px;
-  font-weight: 400;
-  line-height: 20px;
-}
-
 .pagination {
   display: flex;
   list-style-type: none;
@@ -1418,20 +1387,17 @@ img {
 
 .pagination-link {
   display: block;
-  box-sizing: border-box;
-  width: 12px;
-  height: 36px;
-  padding: 10px;
-  line-height: 36px;
-  color: #ffffff;
-  background-color: #82B3D3;
-  text-decoration: none;
   min-width: 60px;
   min-height: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
   text-align: center;
   font-size: 20px;
-  line-height: 38px;
   font-weight: 700;
+  line-height: 38px;
+  text-decoration: none;
+  background-color: #82b3d3;
   border-radius: 4px;
   border: 1px solid transparent;
 }
@@ -1497,12 +1463,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 45px 70px 35px;
-}
-
-.footer-social {
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 140px;
 }
 
 .modal-container {
